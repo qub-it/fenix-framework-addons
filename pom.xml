@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <groupId>com.qubit.solution.fenixedu</groupId>
+    <artifactId>qub-fenixedu-fenix-framework-addons</artifactId>
+    <version>0.0.0</version>
+    <packaging>jar</packaging>
+    <name>qub-fenixedu-fenix-framework-addons</name>
+
+    <properties>
+        <version.pt.ist.fenix.framework>3.0.0</version.pt.ist.fenix.framework>
+        <java.compilation.release>17</java.compilation.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>pt.ist</groupId>
+            <artifactId>fenix-framework-core</artifactId>
+            <version>${version.pt.ist.fenix.framework}</version>
+        </dependency>
+        <dependency>
+            <groupId>pt.ist</groupId>
+            <artifactId>fenix-framework-dml-compiler</artifactId>
+            <version>${version.pt.ist.fenix.framework}</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>qubIT-repo-public</id>
+            <url>https://repository.qub-it.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>qubIT-repo</id>
+            <url>https://repository.qub-it.com/nexus/content/groups/qubITRepo</url>
+        </repository>
+        <repository>
+            <id>fenix-ashes-maven-repository</id>
+            <name>disable dead Fenix ashes</name>
+            <url>https://fenix-ashes.ist.utl.pt/nexus/content/groups/fenix-ashes-maven-repository</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <distributionManagement>
+        <repository>
+            <id>qubIT-oss</id>
+            <url>https://repository-oss.omnis.cloud/nexus/repository/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>qubIT-oss-snapshots</id>
+            <url>https://repository-oss.omnis.cloud/nexus/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
