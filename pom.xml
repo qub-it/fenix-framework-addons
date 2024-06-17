@@ -7,7 +7,7 @@
 
     <groupId>com.qubit.solution.fenixedu</groupId>
     <artifactId>qub-fenixedu-fenix-framework-addons</artifactId>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>qub-fenixedu-fenix-framework-addons</name>
 
