@@ -12,7 +12,7 @@
     <name>qub-fenixedu-fenix-framework-addons</name>
 
     <properties>
-        <version.pt.ist.fenix.framework>3.0.0</version.pt.ist.fenix.framework>
+        <version.pt.ist.fenix.framework>3.1.0</version.pt.ist.fenix.framework>
         <java.compilation.release>17</java.compilation.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
