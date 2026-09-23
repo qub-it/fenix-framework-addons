@@ -1,2 +1,4 @@
+- Refactor: Migrate from javaee to jakarta [#qubIT-Omnis-10960]
+
 1.0.0 (17-06-2024)
 - Initial version release
